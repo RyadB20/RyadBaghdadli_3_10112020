@@ -1,0 +1,22 @@
+{
+  "name": "ryadbaghdadli_3_10112020",
+  "version": "1.0.0",
+  "description": "Projet 3 Openclassrooms Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+  },
+  "dependencies": {
+    "sass": "^1.29.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyadB20/RyadBaghdadli_3_10112020.git"
+  },
+  "author": "Ryad Baghdadli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyadB20/RyadBaghdadli_3_10112020/issues"
+  },
+  "homepage": "https://github.com/RyadB20/RyadBaghdadli_3_10112020#readme"
+}
