@@ -3,6 +3,6 @@ h1 {
     font-weight: 500;
 }
 
-h2, h3, h4, p{
+body{
     @include typo;
 }

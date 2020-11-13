@@ -1,9 +1,21 @@
-*,
-*::after,
-*::before {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 h1 {
@@ -11,8 +23,200 @@ h1 {
   font-weight: 500;
 }
 
-h2, h3, h4, p {
+body {
   font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background: #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header__logo {
+  width: 40%;
+  max-height: 70%;
+}
+
+.footer {
+  background: #353535;
+  width: 100%;
+  height: 225px;
+  color: #fff;
+}
+.footer__title {
+  font-family: "shrikhand", cursive;
+  font-size: 22px;
+  font-weight: normal;
+  margin-left: 30px;
+  padding-top: 25px;
+}
+.footer__nav {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 60%;
+  height: 130px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+.footer__nav__element {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.fa-utensils {
+  font-size: 1.1em;
+}
+
+.fa-hands-helping {
+  font-size: 0.75em;
+}
+
+.footer .fas {
+  padding-right: 5px;
+}
+
+.map {
+  width: 100%;
+  height: 60px;
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map__text {
+  font-weight: 500;
+  padding: 15px;
+}
+
+.presentation {
+  width: 100%;
+  height: 300px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.presentation__title {
+  font-size: 30px;
+  line-height: 2rem;
+}
+.presentation__text {
+  font-size: 20px;
+  line-height: 1.6rem;
+}
+.presentation__btn {
+  color: #9356DC;
+}
+
+.howitworks {
+  width: 100%;
+  height: 475px;
+}
+.howitworks__title {
+  font-size: 25px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.howitworks__listofcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  padding-top: 30px;
+}
+.howitworks__listofcontent__element {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 35%;
+  background: #f6f6f6;
+  margin: 7px;
+  border-radius: 20px;
+}
+
+li {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+li span {
+  margin-right: 40px;
+  margin-left: -13px;
+  color: #fff;
+  padding: 8px 13px;
+  font-weight: normal;
+  font-size: small;
+  background-color: #9356DC;
+  border-radius: 20px;
+}
+
+li .ic1 {
+  margin-right: 40px;
+  color: #838383;
+}
+
+li .fa-store {
+  margin-right: 38px;
+  color: #9356DC;
+}
+
+.restaurants {
+  width: 100%;
+  height: 1170px;
+  background: #f6f6f6;
+}
+.restaurants__title {
+  font-size: 25px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.restaurants__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+.restaurants__container__article {
+  width: 90%;
+  height: 23%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eaeaea;
+}
+.restaurants__container__article__image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants__container__article__text {
+  width: 40%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4em;
+  padding-left: 15px;
+  padding-top: 12px;
+}
+
+.fa-heart {
+  font-size: 1.7em;
+  position: absolute;
+  right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
