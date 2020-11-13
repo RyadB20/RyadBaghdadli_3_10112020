@@ -81,6 +81,11 @@ body {
   padding-right: 5px;
 }
 
+.mailto {
+  text-decoration: none;
+  color: #fff;
+}
+
 .map {
   width: 100%;
   height: 60px;
