@@ -1,6 +1,6 @@
 .header {
     background: $colour-white;
-    height: 70px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,5 +8,11 @@
     &__logo {
         width: 40%;
         max-height: 70%;
+    }
+    &__backhome {
+        position: absolute;
+        left: 20px;
+        color: $colour-footer;
+        font-size: 1.4em;
     }
 }

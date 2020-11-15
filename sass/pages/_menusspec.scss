@@ -1,0 +1,89 @@
+.showplate {
+    height: 280px;
+    width: 100%;
+    margin-bottom: -50px;
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.menu {
+    width: 100%;
+    height: 1300px;
+    background: $colour-bg;
+    border-radius: 50px;
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        &__title {
+            font-size: 32px;
+        }
+        &__icon {
+            font-size: 1.8em;
+        }
+    }
+    &__container {
+        height: 25%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+        &__mealtitle {
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            &__border {
+                border-bottom: 3px solid $colour-tertiary;
+                width: 40px;
+            }
+        }
+        &__meal {
+            height: 23%;
+            margin-top: 15px;
+            padding-left: 10px;
+            border-radius: 20px;
+            background: $colour-white;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            grid-template-rows: 30px 30px;
+            grid-template-areas: "title ."
+                                 "text price";
+            align-items: center;
+            align-content: center;
+            &__title {
+                grid-area: title;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            &__text {
+                grid-area: text;
+                font-size: 18px;
+                font-weight: 300;
+            }
+            &__price {
+                grid-area: price;
+                font-size: 16px;
+                font-weight: 700;
+                justify-self: center;
+            }
+            &__check {
+                display: none;
+                position: absolute;
+            }
+        }
+    }
+    &__order {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

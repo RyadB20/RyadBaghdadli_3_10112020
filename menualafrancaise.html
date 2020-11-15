@@ -12,116 +12,119 @@
 </head>
 <body>
     <!--Header-->
-    <header>
-        <a href="accueil.html"><i class="fas fa-arrow-left"></i></a>
-        <img src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood" title="Oh my Food">
+    <header class="header">
+        <a class="header__backhome" href="accueil.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood" title="Oh my Food" class="header__logo">
     </header>
 
     <!--Image de présentation-->
-    <div>
-        <img src="" alt="menu a la francaise">
+    <div class="showplate">
+        <img src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="menu a la francaise" class="showplate__image">
     </div>
 
     <!--Menu-->
-    <section>
+    <section class="menu">
         <!--Titre restaurant-->
-        <div>
-            <h1>À la française</h1>
-            <i class="far fa-heart"></i>
+        <div class="menu__heading">
+            <h1 class="menu__heading__title">À la française</h1>
+            <i class="far fa-heart menu__heading__icon"></i>
         </div>
 
         <!--Entrées-->
-        <div>
-            <h4>Entrées</h4>
+        <div class="menu__container">
+            <h4 class="menu__container__mealtitle">Entrées</h4>
+            <div class="menu__container__mealtitle__border"></div>
 
-            <article>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zestes d'orange</p>
-                <p>25€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Tartare de poulpe acidulé</h3>
+                <p class="menu__container__meal__text">Aux zestes d'orange</p>
+                <p class="menu__container__meal__price">25€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
 
-            <article>
-                <h3>Velouté de légumes d'antan</h3>
-                <p>Carotte, panais, topinambour</p>
-                <p>35€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Velouté de légumes d'antan</h3>
+                <p class="menu__container__meal__text">Carotte, panais, topinambour</p>
+                <p class="menu__container__meal__price">35€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
 
-            <article>
-                <h3>Soupe à l'oignon</h3>
-                <p>Revisitée</p>
-                <p>20€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Soupe à l'oignon</h3>
+                <p class="menu__container__meal__text">Revisitée</p>
+                <p class="menu__container__meal__price">20€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
         </div>
 
         <!--Plats-->
-        <div>
-            <h4>Plats</h4>
+        <div class="menu__container">
+            <h4 class="menu__container__mealtitle">Plats</h4>
+            <div class="menu__container__mealtitle__border"></div>
 
-            <article>
-                <h3>Coquilles Saint-Jacques</h3>
-                <p>Accompagnées d'une purée de panais</p>
-                <p>40€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Coquilles Saint-Jacques</h3>
+                <p class="menu__container__meal__text">Accompagnées d'une purée de panais</p>
+                <p class="menu__container__meal__price">40€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
 
-            <article>
-                <h3>Magret de canard</h3>
-                <p>Et parmentier de pommes de terre</p>
-                <p>35€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Magret de canard</h3>
+                <p class="menu__container__meal__text">Et parmentier de pommes de terre</p>
+                <p class="menu__container__meal__price">35€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
 
-            <article>
-                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                <p>Sur son lit de gnocchis aux légumes</p>
-                <p>44€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Pigeonneau d’Ille-et-Vilaine</h3>
+                <p class="menu__container__meal__text">Sur son lit de gnocchis aux légumes</p>
+                <p class="menu__container__meal__price">44€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
         </div>
 
         <!--Desserts-->
-        <div>
-            <h4>Desserts</h4>
+        <div class="menu__container">
+            <h4 class="menu__container__mealtitle">Desserts</h4>
+            <div class="menu__container__mealtitle__border"></div>
 
-            <article>
-                <h3>Pétales de violettes glacés</h3>
-                <p>Et purée de noisettes</p>
-                <p>18€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Pétales de violettes glacés</h3>
+                <p class="menu__container__meal__text">Et purée de noisettes</p>
+                <p class="menu__container__meal__price">18€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
 
-            <article>
-                <h3>Fondant au chocolat</h3>
-                <p>Revisité</p>
-                <p>22€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Fondant au chocolat</h3>
+                <p class="menu__container__meal__text">Revisité</p>
+                <p class="menu__container__meal__price">22€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
 
-            <article>
-                <h3>Millefeuille croustillant</h3>
-                <p>Myrtilles et pâte d’amande</p>
-                <p>23€</p>
-                <a><i class="fas fa-check-circle"></i></a>
+            <article class="menu__container__meal">
+                <h3 class="menu__container__meal__title">Millefeuille croustillant</h3>
+                <p class="menu__container__meal__text">Myrtilles et pâte d’amande</p>
+                <p class="menu__container__meal__price">23€</p>
+                <a class="menu__container__meal__check"><i class="fas fa-check-circle"></i></a>
             </article>
         </div>
 
-        <div>
-            <a type="button" href="">Commander</a>
+        <div class="menu__order">
+            <button class="btn">Commander</button>
         </div>
     </section>
 
     <!--Footer-->
-    <footer>
-        <img src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+    <footer class="footer">
+        <h6 class="footer__title">ohmyfood</h6>
         
-        <ul>
-            <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
-            <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+        <ul class="footer__nav">
+            <li class="footer__nav__element"><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+            <li class="footer__nav__element"><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
+            <li class="footer__nav__element">Mentions légales</li>
+            <li class="footer__nav__element"><a class="mailto" href="mailto:contact@ohmyfood.com">Contact</a></li>
         </ul>
     </footer>
 </body>
