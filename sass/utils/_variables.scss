@@ -6,3 +6,45 @@ $colour-bg: #f6f6f6;
 $colour-footer: #353535;
 $colour-map: #eaeaea;
 $colour-icon: #838383;
+$colour-buttongradient: linear-gradient($colour-secondary, $colour-primary);
+
+
+$font-weight: (
+    lighter: 300,
+    light: 400,
+    normal: 500,
+    bold: 600,
+    bolder: 700,
+);
+
+$font-size: (
+    small: 14px,
+    medium: 16px,
+    large: 18px,
+    xlarge: 20px,
+    xxlarge: 22px,
+    title1: 25px,
+    title2: 30px,
+    title3: 32px,
+);
+
+$line-height: (
+    normal: 1.4rem,
+    morespace: 1.6rem,
+    title: 2rem
+);
+
+$border-radius: (
+    element: 20px,
+    button: 30px,
+    bloc: 50px,
+);
+
+$padding-value-home: 20px 20px;
+$padding-value-menu: 20px 60px;
+
+$padding-button: (
+    home: $padding-value-home,
+    menu: $padding-value-menu,
+);
+

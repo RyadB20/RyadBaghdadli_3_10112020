@@ -28,7 +28,14 @@ body {
 }
 
 .btn {
-  padding: 20px 50px;
+  padding: 20px 20px;
+  border: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 30px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 .header {
@@ -41,7 +48,6 @@ body {
 }
 .header__logo {
   width: 40%;
-  max-height: 70%;
 }
 .header__backhome {
   position: absolute;
@@ -127,9 +133,6 @@ body {
   font-size: 20px;
   line-height: 1.6rem;
 }
-.presentation__btn {
-  color: #9356DC;
-}
 
 .howitworks {
   width: 100%;
@@ -161,7 +164,7 @@ body {
 }
 
 li {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -170,8 +173,8 @@ li span {
   margin-left: -13px;
   color: #fff;
   padding: 8px 13px;
-  font-weight: normal;
-  font-size: small;
+  font-weight: 400;
+  font-size: 14px;
   background-color: #9356DC;
   border-radius: 20px;
 }
@@ -210,6 +213,17 @@ li .fa-store {
   background: #fff;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #eaeaea;
+}
+.restaurants__container__article__new {
+  display: block;
+  position: absolute;
+  right: 40px;
+  margin-top: 15px;
+  padding: 7px 10px;
+  background-color: #99E2D0;
+  color: #278870;
+  font-size: 14px;
+  font-weight: 500;
 }
 .restaurants__container__article__image {
   width: 100%;

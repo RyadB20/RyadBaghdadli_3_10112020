@@ -5,3 +5,7 @@
 @mixin typo2{
     font-family: 'shrikhand', cursive ;
 }
+
+@mixin button-padding($value) {
+    padding: $value;
+}
