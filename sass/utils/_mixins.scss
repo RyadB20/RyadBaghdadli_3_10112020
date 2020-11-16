@@ -6,6 +6,6 @@
     font-family: 'shrikhand', cursive ;
 }
 
-@mixin button-padding($value) {
+@mixin button-padding{
     padding: $value;
 }

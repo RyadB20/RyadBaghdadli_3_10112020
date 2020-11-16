@@ -7,4 +7,14 @@
     color: $colour-white;
     border-radius: map-get($border-radius, button);
     background-image: $colour-buttongradient;
+    &--menu{
+        @include button-padding($padding-value-menu);
+        border: transparent;
+        @include typo;
+        font-size: map-get($font-size, large);
+        font-weight: map-get($font-weight, normal);
+        color: $colour-white;
+        border-radius: map-get($border-radius, button);
+        background-image: $colour-buttongradient;
+    }
 }
