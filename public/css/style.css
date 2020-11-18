@@ -1,3 +1,35 @@
+@-webkit-keyframes fullheart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fullheart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fullheart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fullheart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,7 +60,6 @@ body {
 }
 
 .btn {
-  padding: 20px 20px;
   border: transparent;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -121,9 +152,8 @@ body {
   background: #f6f6f6;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  text-align: center;
 }
 .presentation__title {
   font-size: 30px;
@@ -132,6 +162,7 @@ body {
 .presentation__text {
   font-size: 20px;
   line-height: 1.6rem;
+  text-align: center;
 }
 
 .howitworks {
@@ -241,11 +272,24 @@ li .fa-store {
   padding-left: 15px;
   padding-top: 12px;
 }
-
-.fa-heart {
-  font-size: 1.7em;
+.restaurants__container__article__text__heart {
   position: absolute;
   right: 50px;
+}
+.restaurants__container__article__text__heart__fullheart {
+  font-size: 1.7em;
+  right: 5px;
+  position: absolute;
+  color: #9356DC;
+  opacity: 0;
+}
+.restaurants__container__article__text__heart__emptyheart {
+  position: relative;
+  right: 5px;
+  font-size: 1.7em;
+}
+.restaurants__container__article__text__heart__emptyheart:hover > .restaurants__container__article__text__heart__fullheart {
+  opacity: 1;
 }
 
 .showplate {
