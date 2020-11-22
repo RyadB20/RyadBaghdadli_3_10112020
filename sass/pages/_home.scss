@@ -26,9 +26,16 @@
     &__text {
         font-size: map-get($font-size, xlarge);
         line-height: map-get($line-height, morespace);
-        text-align: center
+    }
+    &__home {
+    width: 60%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: $padding-value-home;
     }
 }
+
 
 .howitworks {
     width: 100%;
@@ -95,7 +102,7 @@ li .fa-store {
     height: 1170px;
     background: $colour-bg;
     &__title {
-        font-size: 25px;
+        font-size: map-get($font-size, title1);
         padding-top: 30px;
         padding-left: 20px;
     }
@@ -138,26 +145,15 @@ li .fa-store {
                 line-height: 1.4em;
                 padding-left: 15px;
                 padding-top: 12px;
-                &__heart {
-                    position: absolute;
-                    right: 50px;
-                    &__fullheart {
-                        font-size: 1.7em;
-                        right: 5px;
-                        position: absolute;
-                        color: $colour-primary;
-                        opacity: 0;
-                    }
-                    &__emptyheart {
-                        position: relative;
-                        right: 5px;
-                        font-size: 1.7em;
-                        &:hover > .restaurants__container__article__text__heart__fullheart {
-                          opacity: 1;
-                        }
+                &__box {
+                    overflow: hidden;
+                    &__heart {
+                        right: 40px;
                     }
                 }
             }
+            }
         }
     }
-}
+
+

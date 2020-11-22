@@ -1,32 +1,35 @@
-@-webkit-keyframes fullheart {
-  0% {
+@keyframes fadein {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
-@-moz-keyframes fullheart {
-  0% {
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
-@-o-keyframes fullheart {
-  0% {
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
-@keyframes fullheart {
-  0% {
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -162,7 +165,13 @@ body {
 .presentation__text {
   font-size: 20px;
   line-height: 1.6rem;
-  text-align: center;
+}
+.presentation__home {
+  width: 60%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 20px 20px;
 }
 
 .howitworks {
@@ -272,24 +281,11 @@ li .fa-store {
   padding-left: 15px;
   padding-top: 12px;
 }
-.restaurants__container__article__text__heart {
-  position: absolute;
-  right: 50px;
+.restaurants__container__article__text__box {
+  overflow: hidden;
 }
-.restaurants__container__article__text__heart__fullheart {
-  font-size: 1.7em;
-  right: 5px;
-  position: absolute;
-  color: #9356DC;
-  opacity: 0;
-}
-.restaurants__container__article__text__heart__emptyheart {
-  position: relative;
-  right: 5px;
-  font-size: 1.7em;
-}
-.restaurants__container__article__text__heart__emptyheart:hover > .restaurants__container__article__text__heart__fullheart {
-  opacity: 1;
+.restaurants__container__article__text__box__heart {
+  right: 40px;
 }
 
 .showplate {
@@ -323,6 +319,8 @@ li .fa-store {
 }
 .menu__heading__icon {
   font-size: 1.8em;
+  position: absolute;
+  right: 20px;
 }
 .menu__container {
   height: 25%;
@@ -343,7 +341,7 @@ li .fa-store {
 .menu__container__meal {
   height: 23%;
   margin-top: 15px;
-  padding-left: 10px;
+  padding-left: 15px;
   border-radius: 20px;
   background: #fff;
   display: grid;
@@ -379,6 +377,9 @@ li .fa-store {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu__order__press {
+  padding: 20px 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
